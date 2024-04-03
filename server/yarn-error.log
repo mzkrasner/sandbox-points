@@ -1,0 +1,58 @@
+Arguments: 
+  /Users/markkrasner/.nvm/versions/node/v20.11.1/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/markkrasner/.nvm/versions/node/v20.11.1/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/markkrasner/anaconda3/bin:/Users/markkrasner/anaconda3/condabin:/Users/markkrasner/.cargo/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.11.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/markkrasner/Library/Caches/Yarn/v6/npm-ms-2.1.2-d09d1f357b443f493382a8eb3ccd183872ae6009-integrity/node_modules/ms/license.md' -> '/Users/markkrasner/docs-solutions/server/node_modules/nodemon/node_modules/ms/license.md'
+
+npm manifest: 
+  {
+    "name": "demo",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "license": "MIT",
+    "scripts": {
+      "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+      "dev": "npx tsx index.ts",
+      "build": "tsc",
+      "prestart": "npm run build",
+      "start": "node ."
+    },
+    "devDependencies": {
+      "@types/cors": "^2.8.15",
+      "@types/express": "^4.17.20",
+      "key-did-provider-ed25519": "^2.0.1",
+      "key-did-resolver": "^2.1.3",
+      "nodemon": "^3.1.0",
+      "ts-node": "^10.9.1",
+      "tslint": "^6.1.3",
+      "typescript": "^4.8.4",
+      "uint8arrays": "^4.0.2"
+    },
+    "dependencies": {
+      "@ceramicnetwork/http-client": "^5.5.0",
+      "body-parser": "^1.20.2",
+      "cors": "^2.8.5",
+      "dotenv": "^16.3.1",
+      "exec": "^0.2.1",
+      "express": "^4.18.2"
+    },
+    "type": "module"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
